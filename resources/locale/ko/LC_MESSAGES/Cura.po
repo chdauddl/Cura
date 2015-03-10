@@ -1728,7 +1728,7 @@ msgstr "4번째 노즐 온도 (C)"
 #: Cura/util/profile.py:189
 #, fuzzy
 msgid "5th nozzle temperature (C)"
-msgstr "3번째 노즐 온도 (C)"
+msgstr "5번째 노즐 온도 (C)"
 
 #: Cura/util/profile.py:190
 msgid "Bed temperature (C)"
@@ -1950,14 +1950,14 @@ msgstr "4번째 노즐의 지름. 0은 노즐 1과 같은 지름을 사용합니
 #: Cura/util/profile.py:201
 #, fuzzy
 msgid "Diameter5 (mm)"
-msgstr "지름(mm)"
+msgstr "지름5(mm)"
 
 #: Cura/util/profile.py:201
 #, fuzzy
 msgid ""
 "Diameter of your filament for the 5th nozzle. Use 0 to use the same diameter "
 "as for nozzle 1."
-msgstr "3번째 노즐의 지름. 0은 노즐 1과 같은 지름을 사용합니다."
+msgstr "5번째 노즐의 지름. 0은 노즐 1과 같은 지름을 사용합니다."
 
 #: Cura/util/profile.py:202
 msgid "Flow (%)"
@@ -1990,7 +1990,7 @@ msgid ""
 "Amount of retraction, set at 0 for no retraction at all. A value of 4.5mm "
 "seems to generate good results."
 msgstr ""
-"리트렉션 정도, 0으로 하면 리트렉션을 하지 않습니다. 4.4mm가 좋은 결과를 얻는 "
+"리트렉션 정도, 0으로 하면 리트렉션을 하지 않습니다. 4.5mm가 좋은 결과를 얻는 "
 "것으로 보입니다."
 
 #: Cura/util/profile.py:205
@@ -2019,15 +2019,15 @@ msgstr ""
 
 #: Cura/util/profile.py:207
 msgid "Off"
-msgstr ""
+msgstr "비활성화"
 
 #: Cura/util/profile.py:207
 msgid "All"
-msgstr ""
+msgstr "모두"
 
 #: Cura/util/profile.py:207
 msgid "No Skin"
-msgstr ""
+msgstr "Skin제외"
 
 #: Cura/util/profile.py:207
 msgid "Enable combing"
@@ -2043,7 +2043,8 @@ msgid ""
 msgstr ""
 "Combing은  헤드가 이동을 할 때 프린트에 있는 구멍을 피하는 행위입니다. "
 "Combing이 비활성화 된 경우 프린터 헤드는 시작점에서 끝점까지 직선 이동하고 항"
-"상 필라멘트 후퇴를 합니다."
+"상 필라멘트 후퇴를 합니다. 만약 '모두'라면 모든 표면에 대해 Combing을" 
+"실행합니다. 'skin제외'의 경우라면 겉표면을 모두 제외하고 combing을 실행합니다."
 
 #: Cura/util/profile.py:208
 msgid "Minimal extrusion before retracting (mm)"
@@ -2272,8 +2273,8 @@ msgid ""
 "This is the minimal distance, multiple skirt lines will be put outwards from "
 "this distance."
 msgstr ""
-"스커트와 첫번째 레이어의 거리.\n"
-"이것은 최소 거리로 다수의 스커트 라인의 경우 이 거리 바깥쪽에 그려집니다."
+"skirt와 첫번째 레이어의 거리.\n"
+"이것은 최소 거리로 다수의 skirt 라인의 경우 이 거리 바깥쪽에 그려집니다."
 
 #: Cura/util/profile.py:226
 msgid "Minimal length (mm)"
@@ -2285,13 +2286,13 @@ msgid ""
 "will add more skirt lines to reach this minimal lenght.\n"
 "Note: If the line count is set to 0 this is ignored."
 msgstr ""
-"스커드의 최소 길이, 만약 이 최소 길이에 다다르지 않으면 스커트 라인을 더 추가"
+"skirt의 최소 길이, 만약 이 최소 길이에 다다르지 않으면 스커트 라인을 더 추가"
 "합니다. \n"
 "주의: 만약 라인수가 0이면 이것은 무시됩니다."
 
 #: Cura/util/profile.py:227
 msgid "Fan full on at height (mm)"
-msgstr "최대 팬 속도일 때의 높이 (%)"
+msgstr "최대 팬 속도일 때의 높이 (mm)"
 
 #: Cura/util/profile.py:227
 msgid ""
@@ -2357,7 +2358,7 @@ msgstr ""
 
 #: Cura/util/profile.py:232
 msgid "Solid infill top"
-msgstr "조밀한 상단 채움"
+msgstr "상단면 채움"
 
 #: Cura/util/profile.py:232
 msgid ""
@@ -2369,7 +2370,7 @@ msgstr ""
 
 #: Cura/util/profile.py:233
 msgid "Solid infill bottom"
-msgstr "조밀한 하단 채움"
+msgstr "하단면 채움"
 
 #: Cura/util/profile.py:233
 msgid ""
@@ -2426,7 +2427,6 @@ msgid "Fill amount (%)"
 msgstr "채우는 양 (%)"
 
 #: Cura/util/profile.py:237
-#, python-format
 msgid ""
 "Amount of infill structure in the support material, less material gives "
 "weaker support which is easier to remove. 15% seems to be a good average."
@@ -2929,7 +2929,7 @@ msgstr "프린터와 통신하는데 사용되는 시리얼 포트"
 
 #: Cura/util/profile.py:548
 msgid "Baudrate"
-msgstr "보드레이트"
+msgstr "보레이트"
 
 #: Cura/util/profile.py:548
 msgid ""
@@ -2998,12 +2998,12 @@ msgstr ""
 "여러 오브젝트를 하나 하나를 인쇄 할 수 없습니다. Ultimaker는 60mm."
 
 #: Cura/util/profile.py:557
-#, python-format
+
 msgid "More flow than 150% is rare and usually not recommended."
 msgstr "150% 이상의 압출량은 일반적이지 않고 사용하지 않는것이 좋습니다."
 
 #: Cura/util/profile.py:558
-#, python-format
+
 msgid "Less flow than 50% is rare and usually not recommended."
 msgstr "50% 이하의 압출량은 일반적이지 않고 사용하지 않는것이 좋습니다."
 
@@ -3055,22 +3055,22 @@ msgstr ""
 #: Cura/util/sliceEngine.py:93
 #, python-format
 msgid "%d minutes"
-msgstr "%d 분"
+msgstr "%d minutes"
 
 #: Cura/util/sliceEngine.py:95
 #, python-format
 msgid "%d hour %d minutes"
-msgstr "%d 시 %d 분"
+msgstr "%d hour %d minutes"
 
 #: Cura/util/sliceEngine.py:96
 #, python-format
 msgid "%d hours %d minutes"
-msgstr "%d 시 %d 분"
+msgstr "%d hours %d minutes"
 
 #: Cura/util/sliceEngine.py:101
 #, python-format
 msgid "%0.2f meter %0.0f gram"
-msgstr "%0.2f 미터 %0.0f 그램"
+msgstr "%0.2f meter %0.0f gram"
 
 #~ msgid "Copy profile to clipboard"
 #~ msgstr "프로파일을 클립보드에 복사"
